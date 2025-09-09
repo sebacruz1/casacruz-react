@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  /* neutrales */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 10%;
+  --card: 0 0% 96%;
+  --border: 0 0% 85%;
+
+  /* primario */
+  --primary: 83 64% 45%;
+  --primary-foreground: 0 0% 100%;
+
+  /* accento */
+  --accent: 43 74% 49%;
+  --accent-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 0 0% 10%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 15%;
+  --border: 0 0% 30%;
+
+  --primary: 83 64% 55%;
+  --primary-foreground: 0 0% 100%;
+
+  --accent: 43 74% 55%;
+  --accent-foreground: 0 0% 100%;
+}
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-border: hsl(var(--border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+}
